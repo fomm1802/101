@@ -1,8 +1,9 @@
 local player = game.Players.LocalPlayer
 local guiName = "TeleportGUI"
+local gui = nil
 
 local function createTeleportGUI()
-    local gui = Instance.new("ScreenGui")
+    gui = Instance.new("ScreenGui")
     gui.Name = guiName
     gui.Parent = player.PlayerGui
 
@@ -48,9 +49,9 @@ local function createTeleportGUI()
 end
 
 local function deleteTeleportGUI()
-    local gui = player.PlayerGui:FindFirstChild(guiName)
     if gui then
         gui:Destroy()
+        gui = nil
     end
 end
 
