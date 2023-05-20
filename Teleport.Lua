@@ -1,9 +1,3 @@
-
-Create Running Teleport GUI
-
-
-User
-ใส่รันGui ตลอดเวลา
 local player = game.Players.LocalPlayer
 local guiName = "TeleportGUI"
 
