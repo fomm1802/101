@@ -1,5 +1,6 @@
 local player = game.Players.LocalPlayer
 local guiName = "TeleportGUI"
+local respawnTime = 5 -- เวลาที่ต้องรอก่อนรันสคริปต์ใหม่ (วินาที)
 
 local function createTeleportGUI()
     local gui = Instance.new("ScreenGui")
@@ -54,5 +55,22 @@ local function deleteTeleportGUI()
     end
 end
 
-deleteTeleportGUI()
+local function respawn()
+    deleteTeleportGUI()
+    createTeleportGUI()
+end
+
+local function checkPlayerDeath()
+    local character = player.Character
+    if character and character.Humanoid.Health <= 0 then
+        wait(respawnTime)
+        respawn()
+    end
+end
+
 createTeleportGUI()
+
+while true do
+    checkPlayerDeath()
+    wait(1)
+end
