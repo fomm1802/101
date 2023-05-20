@@ -39,4 +39,4 @@ createTeleportGUI() -- สร้าง GUI ใหม่
 
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bunnynwy/games/main/animesmash_mobile"))()
+
