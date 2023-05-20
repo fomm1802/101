@@ -14,10 +14,10 @@ local function createTeleportGUI()
     teleportButton1.Parent = gui
 
     local teleportButton2 = Instance.new("TextButton")
-    teleportButton2.Name = "Rush Mode"
+    teleportButton2.Name = "Teleport4Power"
     teleportButton2.Size = UDim2.new(0, 100, 0, 30)
     teleportButton2.Position = UDim2.new(0, 20, 0, 60)
-    teleportButton2.Text = "Rush Mode"
+    teleportButton2.Text = "Teleport4Power"
     teleportButton2.Parent = gui
 
     local function teleportToPower()
@@ -34,7 +34,7 @@ local function createTeleportGUI()
 
         if character then
             local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-            humanoidRootPart.CFrame = CFrame.new(-33452.1133, 42.1365967, 6613.29102, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+            humanoidRootPart.CFrame = CFrame.new(52096.6953, 14.2700634, 8540.89551, -0.754095137, -6.27458547e-08, -0.656765163, -2.58641322e-08, 1, -6.58406449e-08, 0.656765163, -3.26634471e-08, -0.754095137)
         end
     end
 
