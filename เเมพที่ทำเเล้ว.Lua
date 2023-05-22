@@ -5,3 +5,4 @@ animesmash_mobile = 13120948763
 Strongman Smash Simulator = 12995840870
 Drive World = 10704789056
 Clicker Fighting Simulator = 12985134424
+Punch a Friend = 13234745978
