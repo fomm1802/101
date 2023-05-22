@@ -6,6 +6,7 @@ local gameScripts = {
     [12995840870] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0strongman",
     [10704789056] = "https://raw.githubusercontent.com/BrickPlayz/Public-Scripts/main/DriveWorld.lua",
     [12985134424] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0clickerfight",
+    [13234745978] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0PunchaFriend",
     -- เพิ่มเกมอื่นๆ ตามต้องการ
 }
 
