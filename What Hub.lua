@@ -7,8 +7,7 @@ local gameScripts = {
     [10704789056] = "https://raw.githubusercontent.com/BrickPlayz/Public-Scripts/main/DriveWorld.lua",
     [12985134424] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0clickerfight",
     [13234745978] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0PunchaFriend",
-    [14364445098] = "https://raw.githubusercontent.com/qxxpc/Script/main/Anime%20Force%20Simulator",
--- เพิ่มเกมอื่นๆ ตามต้องการ
+    [14364445098] = "https://raw.githubusercontent.com/qxxpc/Script/main/Anime%20Force%20Simulator"
 }
 
 -- ตรวจสอบ PlaceId และโหลดสคริปต์เกมเฉพาะ
@@ -16,8 +15,21 @@ local currentPlaceId = game.PlaceId
 local scriptURL = gameScripts[currentPlaceId]
 
 if scriptURL then
-    loadstring(game:HttpGet(scriptURL))()
-    print("โหลดสคริปต์เกมสำเร็จ")
+    local success, result = pcall(function()
+        return game:HttpGet(scriptURL)
+    end)
+
+    if success then
+        local scriptFunction = loadstring(result)
+        if scriptFunction then
+            scriptFunction()
+            print("โหลดสคริปต์เกมสำเร็จ")
+        else
+            print("เกิดข้อผิดพลาดในการโหลดสคริปต์เกม")
+        end
+    else
+        print("เกิดข้อผิดพลาดในการดาวน์โหลดสคริปต์เกม")
+    end
 else
     print("เกมนี้ไม่ได้ใส่สคริปต์ไว้")
 end
