@@ -7,7 +7,7 @@ local gameScripts = {
     [10704789056] = "https://raw.githubusercontent.com/BrickPlayz/Public-Scripts/main/DriveWorld.lua",
     [12985134424] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0clickerfight",
     [13234745978] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0PunchaFriend",
-    [14364445098] = "https://raw.githubusercontent.com/qxxpc/Script/main/Anime%20Force%20Simulator"
+    [14364445098] = "https://raw.githubusercontent.com/Vernyfx/AnimeForce/main/Hi"
 }
 
 -- ตรวจสอบ PlaceId และโหลดสคริปต์เกมเฉพาะ
