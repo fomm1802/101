@@ -1,6 +1,7 @@
 local gameScripts = {
     [14491001128] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Paragon",
-    [13772394625] = "https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"
+    [13772394625] = "https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua",
+    [14547497059] = "https://raw.githubusercontent.com/Me1tan/script/main/WeaponForgeSim"
 }
 
 local currentPlaceId = game.PlaceId
