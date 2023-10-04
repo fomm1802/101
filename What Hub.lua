@@ -1,9 +1,8 @@
 local gameScripts = {
     [14491001128] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Paragon",
-    [13772394625] = "https://api.luarmor.net/files/v3/loaders/8555f27454c952fb960ba00a4cd3f8f6.lua"
+    [13772394625] = "https://api.luarmor.net/files/v3/loaders/a841eae20fc9dcd19cda5aa10360d508"
 }
 
--- ตรวจสอบ PlaceId และโหลดสคริปต์เกมเฉพาะ
 local currentPlaceId = game.PlaceId
 local scriptURL = gameScripts[currentPlaceId]
 
