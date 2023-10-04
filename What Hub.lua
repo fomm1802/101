@@ -1,5 +1,6 @@
 local gameScripts = {
-    [14491001128] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Paragon"
+    [14491001128] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Paragon",
+    [13772394625] = "https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"
 }
 
 -- ตรวจสอบ PlaceId และโหลดสคริปต์เกมเฉพาะ
