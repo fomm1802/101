@@ -1,6 +1,6 @@
 local gameScripts = {
     [14491001128] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Paragon",
-    [13772394625] = "https://api.luarmor.net/files/v3/loaders/a841eae20fc9dcd19cda5aa10360d508"
+    [13772394625] = "https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"
 }
 
 local currentPlaceId = game.PlaceId
