@@ -1,6 +1,6 @@
 local gameScripts = {
     [14491001128] = "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Paragon",
-    [13772394625] = "https://raw.githubusercontent.com/DevTravDYT/dsaaswadfeszad/main/Testt",
+    [13772394625] = "",
     [14547497059] = "https://pastebin.com/raw/PjjDAJbU"
 }
 
