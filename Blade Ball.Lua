@@ -2,7 +2,7 @@ local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scri
 
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
-local tab = win:Tab("Tab")
+local tab = win:Tab("Main")
 
 tab:Button("Auto Parry", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
