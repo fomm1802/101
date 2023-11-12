@@ -2,18 +2,15 @@ local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scri
 
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
-local tab = win:Tab("Tab 1")
+local tab = win:Tab("Tab")
 
 tab:Button("Auto Parry", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 end)
 
-tab:Dropdown("Dropdown",{"Dash","Option 2 - Do something else","Option 3 - Do something else","Option 4 - Do something else","Option 5 - Do something else","Option 6 - Add new option","Option 7 - Add new option"}, function(t)
+tab:Dropdown("Dropdown",{"Equip Dash","Option 2","Option 3","Option 4","Option 5","Option 6","Option 7"}, function(t)
     if t == 1 then
-        local args = {
-            [1] = "Dash"
-        }
-        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Store"):WaitForChild("RequestEquipAbility"):InvokeServer(unpack(args))
+        loadstring(game:HttpGet("https://pastebin.com/raw/A9ftfwtr", true))()
     elseif t == 2 then
         -- Do something else
     elseif t == 3 then
@@ -29,7 +26,7 @@ tab:Dropdown("Dropdown",{"Dash","Option 2 - Do something else","Option 3 - Do so
     end
 end)
 
-tab:Toggle("Spam Parry",false, function(t),Enm.KeyCode.M)
+tab:Toggle("Spam Parry",false, function(t)
 _G.Block = t
 while _G.Block do
 local A_1 = 0
