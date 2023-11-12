@@ -8,7 +8,7 @@ tab:Button("Auto Parry", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 end)
 
-tab:Dropdown("Dropdown",{"Option 1 - Equip Dash","Option 2 - Do something else","Option 3 - Do something else","Option 4 - Do something else","Option 5 - Do something else","Option 6 - Add new option","Option 7 - Add new option"}, function(t)
+tab:Dropdown("Dropdown",{"Dash","Option 2 - Do something else","Option 3 - Do something else","Option 4 - Do something else","Option 5 - Do something else","Option 6 - Add new option","Option 7 - Add new option"}, function(t)
     if t == 1 then
         -- Equip Dash ability
         local args = {
