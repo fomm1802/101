@@ -48,4 +48,4 @@ local Event = game:GetService("ReplicatedStorage").Remotes.ParryAttempt
 Event:FireServer(A_1, A_2, A_3, A_4)
 wait()
     end
-end) I
+end)
