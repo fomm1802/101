@@ -34,6 +34,26 @@ tab2:Button("Dash", function(t)
 loadstring(game:HttpGet("https://pastebin.com/raw/A9ftfwtr", true))()
 end)
 
+tab2:Button("Blink", function(t)
+loadstring(game:HttpGet("https://pastebin.com/raw/8rAdJFuf", true))()
+end)
+
+tab2:Button("Forcefield", function(t)
+loadstring(game:HttpGet("https://pastebin.com/raw/JNRdbRu9", true))()
+end)
+
+tab2:Button("Swap", function(t)
+loadstring(game:HttpGet("https://pastebin.com/raw/R6gaEL88", true))()
+end)
+
+tab2:Button("Reaper", function(t)
+loadstring(game:HttpGet("https://pastebin.com/raw/y1DTzqy9", true))()
+end)
+
+tab2:Button("Telekinesis", function(t)
+loadstring(game:HttpGet("https://pastebin.com/raw/cDvfVQ50", true))()
+end)
+
 tab2:Button("", function(t)
 loadstring(game:HttpGet("", true))()
 end)
