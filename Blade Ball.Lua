@@ -10,7 +10,6 @@ end)
 
 tab:Dropdown("Dropdown",{"Dash","Option 2 - Do something else","Option 3 - Do something else","Option 4 - Do something else","Option 5 - Do something else","Option 6 - Add new option","Option 7 - Add new option"}, function(t)
     if t == 1 then
-        -- Equip Dash ability
         local args = {
             [1] = "Dash"
         }
@@ -30,7 +29,7 @@ tab:Dropdown("Dropdown",{"Dash","Option 2 - Do something else","Option 3 - Do so
     end
 end)
 
-tab:Toggle("Spam Parry",false, function(t)
+tab:Toggle("Spam Parry",false, function(t),Enm.KeyCode.M)
 _G.Block = t
 while _G.Block do
 local A_1 = 0
