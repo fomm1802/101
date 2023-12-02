@@ -4,6 +4,6 @@ local win = lib:Window("Testing",Color3.fromRGB(44, 120, 224), Enum.KeyCode.Righ
 
 local tab = win:Tab("Tab")
 
-tab:Button("Button", function()
+tab:Button("Classic Obby", function()
 loadstring(game:HttpGet("https://pastebin.pl/view/raw/fd03ac1a"))()
 end)
