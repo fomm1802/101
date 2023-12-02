@@ -4,6 +4,6 @@ local tab = win:Tab("Tab")
 
 tab:Button("Classic Obby", function()
 
-loadstring(game:HttpGet(('https://pastebin.pl/view/fd03ac1a'),true))()
+loadstring(game:HttpGet"https://pastebin.pl/view/fd03ac1a")()
 
 end)
