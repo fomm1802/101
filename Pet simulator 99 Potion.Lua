@@ -412,7 +412,7 @@ end
 end)
 
 
-sera:Toggle("Buy GardenMerchant",true, function(bool)
+sera:Toggle("Buy GardenMerchant",false, function(bool)
 _G.GardenMerchant = bool
 while _G.GardenMerchant do 
 wait(0.01)
