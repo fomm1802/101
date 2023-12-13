@@ -4,8 +4,9 @@ local win = DiscordLib:Window("discord library")
 
 local serv = win:Server("Preview", "")
 
-local tgls = serv:Channel("Toggles")
+local tgls = serv:Channel("Auto PlantSeed")
 
+local sera = serv:Channel("Shop")
 
 
 
@@ -407,5 +408,54 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_FireCustomFromClient"):FireServer(unpack(args))
+end
+end)
+
+
+sera:Toggle("Buy GardenMerchant",true, function(bool)
+_G.GardenMerchant = bool
+while _G.GardenMerchant do 
+wait(0.01)
+local args = {
+    [1] = "GardenMerchant",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Merchant_RequestPurchase"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "GardenMerchant",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Merchant_RequestPurchase"):InvokeServer(unpack(args))
+wait()
+local args = {
+    [1] = "GardenMerchant",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Merchant_RequestPurchase"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "GardenMerchant",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Merchant_RequestPurchase"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "GardenMerchant",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Merchant_RequestPurchase"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "GardenMerchant",
+    [2] = 6
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Merchant_RequestPurchase"):InvokeServer(unpack(args))
 end
 end)
