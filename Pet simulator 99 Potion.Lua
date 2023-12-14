@@ -10,6 +10,200 @@ local sera = serv:Channel("Shop")
 
 
 
+tgls:Toggle("PlantSeed Gift",false, function(bool)
+_G.Gift = bool
+while _G.Gift do 
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 1,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 2,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 3,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 4,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 5,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 6,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 7,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 8,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 9,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 10,
+    [4] = "Gift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+end
+end)
+
+tgls:Toggle("PlantSeed Coin",false, function(bool)
+_G.Coin = bool
+while _G.Coin do 
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 1,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 2,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 3,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 4,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 5,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 6,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 7,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 8,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 9,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+local args = {
+    [1] = "FlowerGarden",
+    [2] = "PlantSeed",
+    [3] = 10,
+    [4] = "Coin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
+wait(0.01)
+end
+end)
+
 tgls:Toggle("PlantSeed Diamond",false, function(bool)
 _G.A = bool
 while _G.A do 
