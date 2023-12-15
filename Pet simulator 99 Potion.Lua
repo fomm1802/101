@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/67VHwfHB"))() --DisableEggAnimation
+
+
 local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
