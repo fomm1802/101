@@ -8,7 +8,7 @@ local tab = win:Tab("FlowerGarden")
 
 local tab1 = win:Tab("Shop")
 
-local tab5 = win:Tab("Settings")
+local tab2 = win:Tab("")
 
 
 tab:Toggle("Coin Seed",false, function(t)
