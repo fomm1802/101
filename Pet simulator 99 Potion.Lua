@@ -1,4 +1,9 @@
-local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+(unpack(args))
+  wait(0.01)
+end
+end
+end)
+https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txtlocal lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("PlantSeed")
@@ -69,9 +74,14 @@ end
 end
 end)
 
+
+
+
+
+
 tab1:Toggle("WaterSeed",false, function(t)
 _G.WaterSeed = t
-_G.ClaimPlant = t
+
 while _G.WaterSeed do
 for i = 1, 10 do
   local args = {
@@ -83,6 +93,10 @@ for i = 1, 10 do
   wait(0.000000000001)
 end
 end
+end)
+
+tab1:Toggle("ClaimPlant",false, function(t)
+_G.ClaimPlant = t
 
 while _G.ClaimPlant do
 for i = 1, 10 do
