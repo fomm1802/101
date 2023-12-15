@@ -5,7 +5,7 @@ local tab = win:tab("PlantSeed")
 
 local tab1 = win:Tab("Shop")
 
-local tab5 = win:tab("Settings")
+local tab2 = win:tab("Settings")
 
 
 tab:Toggle("Coin Seed",false, function(t)
@@ -75,18 +75,19 @@ end)
 tab1:Toggle("GardenMerchant",false, function(t)
 _G.GardenMerchant = t
 while _G.GardenMerchant do
-for i = 1, 10 do
+for i = 1, 6 do
 local args = {
     [1] = "GardenMerchant",
     [2] = i
 }
 
 game:GetService("ReplicatedStorage").Network.Merchant_RequestPurchase:InvokeServer(unpack(args))
+wait(0.01)
 end
 end
 end)
 
-tab5:Toggle("WaterSeed",false, function(t)
+tab2:Toggle("WaterSeed",false, function(t)
 _G.WaterSeed = t
 
 while _G.WaterSeed do
@@ -102,7 +103,7 @@ end
 end
 end)
 
-tab5:Toggle("ClaimPlant",false, function(t)
+tab2:Toggle("ClaimPlant",false, function(t)
 _G.ClaimPlant = t
 
 while _G.ClaimPlant do
