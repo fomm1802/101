@@ -1,11 +1,11 @@
 local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
-local tab = win:Tab("PlantSeed")
+local tab = win:Tab("FlowerGarden")
 
 local tab1 = win:Tab("Shop")
 
-local tab2 = win:Tab("Settings")
+local tab5 = win:Tab("Settings")
 
 
 tab:Toggle("Coin Seed",false, function(t)
@@ -72,22 +72,7 @@ end
 end
 end)
 
-tab1:Toggle("GardenMerchant",false, function(t)
-_G.GardenMerchant = t
-while _G.GardenMerchant do
-for i = 1, 6 do
-local args = {
-    [1] = "GardenMerchant",
-    [2] = i
-}
-
-game:GetService("ReplicatedStorage").Network.Merchant_RequestPurchase:InvokeServer(unpack(args))
-wait(0.01)
-end
-end
-end)
-
-tab2:Toggle("WaterSeed",false, function(t)
+tab:Toggle("WaterSeed",false, function(t)
 _G.WaterSeed = t
 
 while _G.WaterSeed do
@@ -98,12 +83,12 @@ for i = 1, 10 do
     [3] = i
   }
   game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
-  wait(0.01)
+  wait(0.001)
 end
 end
 end)
 
-tab2:Toggle("ClaimPlant",false, function(t)
+tab:Toggle("ClaimPlant",false, function(t)
 _G.ClaimPlant = t
 
 while _G.ClaimPlant do
@@ -118,3 +103,18 @@ for i = 1, 10 do
 end
 end
 end)
+
+tab1:Toggle("GardenMerchant",false, function(t)
+_G.GardenMerchant = t
+while _G.GardenMerchant do
+for i = 1, 10 do
+local args = {
+    [1] = "GardenMerchant",
+    [2] = i
+}
+
+game:GetService("ReplicatedStorage").Network.Merchant_RequestPurchase:InvokeServer(unpack(args))
+end
+end
+end)
+
