@@ -8,7 +8,7 @@ local tab = win:Tab("FlowerGarden")
 
 local tab1 = win:Tab("Shop")
 
-tab:Toggle("Coin Seed",false, function(t)
+tab:Toggle("Coin Seed",false,function(t)
 _G.Coin = t
 while _G.Coin do
 for i = 1, 10 do
@@ -24,7 +24,7 @@ end
 end
 end)
 
-tab:Toggle("Diamond Seed",false, function(t)
+tab:Toggle("Diamond Seed",false,function(t)
 _G.Coin = t
 while _G.Coin do
 for i = 1, 10 do
@@ -39,7 +39,7 @@ end
 end
 end)
 
-tab:Toggle("Potion Seed",false, function(t)
+tab:Toggle("Potion Seed",false,function(t)
 _G.Coin = t
 while _G.Coin do
 for i = 1, 10 do
@@ -54,7 +54,7 @@ end
 end
 end)
 
-tab:Toggle("Gift Seed",false, function(t)
+tab:Toggle("Gift Seed",false,function(t)
 _G.Coin = t
 while _G.Coin do
 for i = 1, 10 do
@@ -69,7 +69,7 @@ end
 end
 end)
 
-tab:Toggle("WaterSeed",false, function(t)
+tab:Toggle("WaterSeed",false,function(t)
 _G.WaterSeed = t
 
 while _G.WaterSeed do
@@ -84,7 +84,7 @@ end
 end
 end)
 
-tab:Toggle("ClaimPlant",false, function(t)
+tab:Toggle("ClaimPlant",false,function(t)
 _G.ClaimPlant = t
 
 while _G.ClaimPlant do
@@ -99,7 +99,7 @@ end
 end
 end)
 
-tab1:Toggle("GardenMerchant",false, function(t)
+tab1:Toggle("GardenMerchant",false,function(t)
 _G.GardenMerchant = t
 while _G.GardenMerchant do
 for i = 1, 10 do
