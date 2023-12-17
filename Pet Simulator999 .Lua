@@ -70,7 +70,7 @@ end
 end)
 
 tab:Toggle("WaterSeed",false, function(t)
-_G.WaterSeed = true
+_G.WaterSeed = t
 
 while _G.WaterSeed do
 for i = 1, 10 do
@@ -85,7 +85,7 @@ end
 end)
 
 tab:Toggle("ClaimPlant",false, function(t)
-_G.ClaimPlant = true
+_G.ClaimPlant = t
 
 while _G.ClaimPlant do
 for i = 1, 10 do
