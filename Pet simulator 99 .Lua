@@ -177,7 +177,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Eggs_
 end
 end)
 
-tab2:Toggle("Farm 63", false, function(t)
+tab2:Button("Farm Area 63", function()
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1209.9130859375, 15.937521934509277, 2688.33251953125)
 
