@@ -142,7 +142,16 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
 
 wait(0.1)
-for i = 1,3 do
+local args = {
+    [1] = "87c7cba1e6924c408f8b3d750430ecb1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+local args = {
+    [1] = "87c7cba1e6924c408f8b3d750430ecb1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
 local args = {
     [1] = "87c7cba1e6924c408f8b3d750430ecb1"
 }
@@ -174,7 +183,16 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_ClearSlot"):FireServer(unpack(args))
 end
 
-for i,v = 1,3 do
+local args = {
+    [1] = "3673663754a240c79f30e0a8698b96f4"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+local args = {
+    [1] = "3673663754a240c79f30e0a8698b96f4"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
 local args = {
     [1] = "3673663754a240c79f30e0a8698b96f4"
 }
