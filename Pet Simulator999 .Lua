@@ -69,7 +69,7 @@ end
 end
 end)
 
-tab:Toggle("WaterSeed",false, function(t)
+tab:Toggle("WaterSeed",true, function(t)
 _G.WaterSeed = t
 
 while _G.WaterSeed do
@@ -84,7 +84,7 @@ end
 end
 end)
 
-tab:Toggle("ClaimPlant",false, function(t)
+tab:Toggle("ClaimPlant",true, function(t)
 _G.ClaimPlant = t
 
 while _G.ClaimPlant do
