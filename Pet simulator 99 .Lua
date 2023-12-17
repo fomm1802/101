@@ -178,9 +178,9 @@ end
 end)
 
 tab2:Toggle("Farm 63", false, function(t)
-local Tween = game:GetService("TweenService")
-local Tw = Tween:Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(0,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0), 
-{CFrame = CFrame.new(1209.984375, 15.937521934509277, 2688.101806640625)}):Play()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1209.9130859375, 15.937521934509277, 2688.33251953125)
+
 for i = 1,4 do 
 wait(0.1)
 local args = {
