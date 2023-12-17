@@ -127,31 +127,32 @@ local Tw = Tween:Create(game.Players.LocalPlayer.Character.HumanoidRootPart,Twee
 {CFrame = CFrame.new(-8.608195304870605, 47.28281021118164, -214.9239044189453)}):Play()
 
 for i = 1,4 do 
-wait(0.1)
+wait(0.01)
 local args = {
     [1] = i
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_ClearSlot"):FireServer(unpack(args))
 end
-
+wait(0.01)
 local args = {
     [1] = "b8521b6f8fe34771ae941de818d3c57c"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
-
-wait(0.1)
+wait(0.01)
 local args = {
     [1] = "87c7cba1e6924c408f8b3d750430ecb1"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+wait(0.01)
 local args = {
     [1] = "87c7cba1e6924c408f8b3d750430ecb1"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+wait(0.01)
 local args = {
     [1] = "87c7cba1e6924c408f8b3d750430ecb1"
 }
@@ -175,30 +176,32 @@ tab2:Button("Farm Area 63", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1209.9130859375, 15.937521934509277, 2688.33251953125)
 
 for i = 1,4 do 
-wait(0.1)
+wait(0.01)
 local args = {
     [1] = i
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_ClearSlot"):FireServer(unpack(args))
 end
-
+wait(0.01)
 local args = {
     [1] = "3673663754a240c79f30e0a8698b96f4"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+wait(0.01)
 local args = {
     [1] = "3673663754a240c79f30e0a8698b96f4"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+wait(0.01)
 local args = {
     [1] = "3673663754a240c79f30e0a8698b96f4"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
-wait()
+wait(0.01)
 end
 
 local args = {
