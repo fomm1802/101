@@ -212,8 +212,9 @@ game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Encha
 wait(0.1)
 
 local args = {
-    [1] = "3673663754a240c79f30e0a8698b96f4"
+    [1] = "855b612607d34766be1101816e8afefe"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Enchants_Equip"):FireServer(unpack(args))
+
 end)
