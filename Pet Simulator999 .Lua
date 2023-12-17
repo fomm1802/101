@@ -35,7 +35,6 @@ for i = 1, 10 do
     [4] = "Diamond"
   }
   game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
-  wait()
 end
 end
 end)
@@ -51,7 +50,6 @@ for i = 1, 10 do
     [4] = "Potion"
   }
   game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
-  wait()
 end
 end
 end)
@@ -67,7 +65,6 @@ for i = 1, 10 do
     [4] = "Gift"
   }
   game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
-  wait()
 end
 end
 end)
@@ -83,7 +80,6 @@ for i = 1, 10 do
     [3] = i
   }
   game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
-  wait()
 end
 end
 end)
@@ -99,7 +95,6 @@ for i = 1, 10 do
     [3] = i
   }
   game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Instancing_InvokeCustomFromClient"):InvokeServer(unpack(args))
-  wait()
 end
 end
 end)
@@ -114,7 +109,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Network.Merchant_RequestPurchase:InvokeServer(unpack(args))
-wait()
 end
 end
 end)
