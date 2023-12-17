@@ -121,10 +121,9 @@ end
 end
 end)
 
-tab2:Toggle("Egg 78", false, function(t)
-local Tween = game:GetService("TweenService")
-local Tw = Tween:Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(0,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0), 
-{CFrame = CFrame.new(-8.608195304870605, 47.28281021118164, -214.9239044189453)}):Play()
+tab2:Toggle("Egg 78",false, function(t)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8.608195304870605, 47.28281021118164, -214.9239044189453)
 
 for i = 1,4 do 
 wait(0.01)
