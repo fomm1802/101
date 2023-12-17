@@ -8,7 +8,7 @@ local tab = win:Tab("FlowerGarden")
 
 local tab1 = win:Tab("Shop")
 
-local tab2 = win:Tab("")
+local tab2 = win:Tab("Egg")
 
 
 tab:Toggle("Coin Seed",false, function(t)
@@ -118,5 +118,21 @@ local args = {
 
 game:GetService("ReplicatedStorage").Network.Merchant_RequestPurchase:InvokeServer(unpack(args))
 end
+end
+end)
+
+tab2:Toggle("Egg 78", false, function(t)
+local Tween = game:GetService("TweenService")
+local Tw = Tween:Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(0,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-8.608195304870605, 47.28281021118164, -214.9239044189453)}):Play()
+
+_G.Frosted = t
+while _G.Frosted do
+local args = {
+    [1] = "Frosted Geode Egg",
+    [2] = 41
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Eggs_RequestPurchase"):InvokeServer(unpack(args))
 end
 end)
