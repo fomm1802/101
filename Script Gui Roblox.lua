@@ -3,7 +3,6 @@ local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scri
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("Tab 1")
-local teleport = win:Tab("Teleport")
 
 tab:Button("Button", function()
 lib:Notification("Notification", "Hello!", "Hi!")
@@ -29,11 +28,9 @@ tab:Textbox("Textbox",true, function(t)
 print(t)
 end)
 
-tab:Bind("Bind",Enum.KeyCode.RightShift, function()
-print("Pressed!")
-end)
-
 tab:Label("Label")
+
+local teleport = win:Tab("Teleport")
 
 teleport:Button("Lower Player In Sever", function()
   loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Lower%20Player%20In%20Sever.lua"))()
@@ -43,8 +40,12 @@ teleport:Button("Hopper Sever", function()
   loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Hopper%20Server.lua"))()
 end)
 
-local changeclr = win:Tab("Change UI Color")
+local change = win:Tab("Change UI Color")
 
-changeclr:Colorpicker("Change UI Color",Color3.fromRGB(44, 120, 224), function(t)
+change:Bind("Bind",Enum.KeyCode.K, function()
+print("Pressed!")
+end)
+
+change:Colorpicker("Change UI Color",Color3.fromRGB(44, 120, 224), function(t)
 lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
 end)
