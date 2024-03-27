@@ -1,40 +1,50 @@
-local library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ShaddowScripts/Main/main/Library"))()
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
 
-local Main = library:CreateWindow("Main","Crimson")
+local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
-local tab = Main:CreateTab("Cheats")
-local tab2 = Main:CreateTab("Misc")
-local tab3 = Main:CreateTab("Error")
+local tab = win:Tab("Tab 1")
+local teleport = win:Tab("Teleport")
 
-tab:CreateButton("Hi",function()
-print("clicked")
+tab:Button("Button", function()
+lib:Notification("Notification", "Hello!", "Hi!")
 end)
 
-tab:CreateToggle("Farm",function(a)
-print(a)
+tab:Toggle("Toggle",false, function(t)
+print(t)
 end)
 
-tab:CreateSlider("Wow",1,16,function(a)
-print(a)
+tab:Slider("Slider",0,100,30, function(t)
+print(t)
 end)
 
-tab:CreateCheckbox("Aimbot",function(a)
-print(a)
+tab:Dropdown("Dropdown",{"Option 1","Option 2","Option 3","Option 4","Option 5"}, function(t)
+print(t)
 end)
 
-tab:CreateDropdown("Word",{"Sung","Jin","Woo"},function(a)
-print(a)
+tab:Colorpicker("Colorpicker",Color3.fromRGB(255,0,0), function(t)
+print(t)
 end)
 
-tab2:CreateButton("Hello",function()
-print("clicked")
+tab:Textbox("Textbox",true, function(t)
+print(t)
 end)
 
-tab3:CreateButton("Lower Player in Sever",function()
-loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Lower%20Player%20In%20Sever.lua"))()
+tab:Bind("Bind",Enum.KeyCode.RightShift, function()
+print("Pressed!")
 end)
 
-tab3:CreateButton("Hopper Sever",function()
-loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Hopper%20Server.lua"))()
+tab:Label("Label")
+
+teleport:Button("Lower Player In Sever", function()
+  loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Lower%20Player%20In%20Sever.lua"))()
 end)
-tab:Show()
+
+teleport:Button("Hopper Sever", function()
+  loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Hopper%20Server.lua"))()
+end)
+
+local changeclr = win:Tab("Change UI Color")
+
+changeclr:Colorpicker("Change UI Color",Color3.fromRGB(44, 120, 224), function(t)
+lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
+end)
