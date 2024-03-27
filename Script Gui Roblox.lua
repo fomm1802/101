@@ -24,16 +24,32 @@ tab:Colorpicker("Colorpicker",Color3.fromRGB(255,0,0), function(t)
 print(t)
 end)
 
-tab:Textbox("Textbox",true, function(t)
-print(t)
+local sethumanoid = win:Tab("Set")
+
+sethumanoid:Label("Walk Speed")
+sethumanoid:Textbox("Walk Speed",true, function(t)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
 
-tab:Label("Label")
+sethumanoid:Label("Jump")
+sethumanoid:Textbox("Jump Power",true, function(t)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
+end)
+
+sethumanoid:Button("Inf Jump", function()
+  local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
 
 local teleport = win:Tab("Teleport")
 
 teleport:Button("Lower Player In Sever", function()
-  loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Lower%20Player%20In%20Sever.lua"))()
+      loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Lower%20Player%20In%20Sever.lua"))()
 end)
 
 teleport:Button("Hopper Sever", function()
