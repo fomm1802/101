@@ -26,12 +26,10 @@ end)
 
 local sethumanoid = win:Tab("Set")
 
-sethumanoid:Label("Walk Speed")
 sethumanoid:Textbox("Walk Speed",true, function(t)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
 
-sethumanoid:Label("Jump")
 sethumanoid:Textbox("Jump Power",true, function(t)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
