@@ -32,6 +32,32 @@ _G.VoidKey = t
     end
 end)
 
+tab:Toggle("Use CrystalWheel",false, function(t)
+_G.CrystalWheel = t
+    while _G.CrystalWheel do wait(.1)
+	local args = {
+    	[1] = "CrystalWheel"
+	}
+	game:GetService("ReplicatedStorage").Network:FindFirstChild("Spinny Wheel: Request Spin"):InvokeServer(unpack(args))
+    end
+end)
+
+tab:Toggle("Use TechWheel",false, function(t)
+_G.TechWheel = t
+    while _G.TechWheel do wait(.1)
+	local args = {
+    	[1] = "TechWheel"
+	}
+	game:GetService("ReplicatedStorage").Network:FindFirstChild("Spinny Wheel: Request Spin"):InvokeServer(unpack(args))
+    end
+end)
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
 local sethumanoid = win:Tab("Set")
 
 sethumanoid:Textbox("Walk Speed",true, function(t)
