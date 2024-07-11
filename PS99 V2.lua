@@ -3,11 +3,11 @@
 
 local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
 
-local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224),Enum.KeyCode.RightControl)
 
 local tab = win:Tab("Tab 1")
 
-tab:Button("Button", function()
+tab:Button("Button", function() 
 lib:Notification("Notification", "Hello!", "Hi!")
 end)
 
@@ -18,10 +18,10 @@ _G.E = t
     end
 end)
 
-tab:Toggle("Toggle",false, function(t)
+tab:Toggle("Use CrystalKey",false, function(t)
 _G.D = t
     while _G.D do wait(.1)
-        game:GetService("ReplicatedStorage").Network.VoidKey_Unlock:InvokeServer()
+        game:GetService("ReplicatedStorage").Network.CrystalKey_Unlock:InvokeServer()
     end
 end)
 
