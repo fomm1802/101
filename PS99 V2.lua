@@ -11,17 +11,24 @@ tab:Button("Button", function()
 lib:Notification("Notification", "Hello!", "Hi!")
 end)
 
-tab:Toggle("Use VoidKey",false, function(t)
-_G.E = t
-    while _G.E do wait(.1)
-        game:GetService("ReplicatedStorage").Network.VoidKey_Unlock:InvokeServer()
+tab:Toggle("Use TechKey",false, function(t)
+_G.TechKey = t
+    while _G.TechKey do wait(.1)
+        game:GetService("ReplicatedStorage").Network.TechKey_Unlock:InvokeServer()
     end
 end)
 
 tab:Toggle("Use CrystalKey",false, function(t)
-_G.D = t
-    while _G.D do wait(.1)
+_G.CrystalKey = t
+    while _G.CrystalKey do wait(.1)
         game:GetService("ReplicatedStorage").Network.CrystalKey_Unlock:InvokeServer()
+    end
+end)
+
+tab:Toggle("Use VoidKey",false, function(t)
+_G.VoidKey = t
+    while _G.VoidKey do wait(.1)
+        game:GetService("ReplicatedStorage").Network.VoidKey_Unlock:InvokeServer()
     end
 end)
 
