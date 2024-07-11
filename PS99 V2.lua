@@ -32,11 +32,11 @@ _G.VoidKey = t
     end
 end)
 
-tab:Toggle("Use CrystalWheel",false, function(t)
+tab:Toggle("Use StarterWheel",false, function(t)
 _G.CrystalWheel = t
     while _G.CrystalWheel do wait(.1)
 	local args = {
-    	[1] = "CrystalWheel"
+    	[1] = "StarterWheel"
 	}
 	game:GetService("ReplicatedStorage").Network:FindFirstChild("Spinny Wheel: Request Spin"):InvokeServer(unpack(args))
     end
