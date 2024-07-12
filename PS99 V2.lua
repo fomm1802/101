@@ -5,9 +5,9 @@ local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scri
 
 local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224),Enum.KeyCode.RightControl)
 
-local tab = win:Tab("Tab 1")
+local tab = win:Tab("Tab")
 
-tab:Button("Button", function() 
+-- tab:Button("Button", function() 
 lib:Notification("Notification", "Hello!", "Hi!")
 end)
 
@@ -52,6 +52,15 @@ _G.TechWheel = t
     end
 end)
 
+tab:Toggle("Use VoidWheel",false, function(t)
+_G.VoidWheel = t
+    while _G.VoidWheel do wait(.1)
+	local args = {
+    	[1] = "VoidWheel"
+	}
+	game:GetService("ReplicatedStorage").Network:FindFirstChild("Spinny Wheel: Request Spin"):InvokeServer(unpack(args))
+    end
+end)
 
 
 
