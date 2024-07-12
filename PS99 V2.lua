@@ -1,33 +1,49 @@
-local library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ShaddowScripts/Main/main/Library"))()
-
-local Main = library:CreateWindow("Main", "Crimson")
-
-local tab = Main:CreateTab("Cheats")
-local tab2 = Main:CreateTab("Misc")
-
-tab:CreateButton("Hi", function()
-    print("clicked")
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/StepBroFurious/Script/main/HydraHubUi.lua'))()
+local Window = UILib.new("Grand Piece Online", game.Players.LocalPlayer.UserId, "Buyer")
+local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
+local SubButton1 = Category1:Button("Combat", "http://www.roblox.com/asset/?id=8395747586")
+local Section1 = SubButton1:Section("Section", "Left")
+Section1:Button({
+    Title = "Kill All",
+    ButtonName = "KILL!!",
+    Description = "kills everyone",
+    }, function(value)
+    print(value)
 end)
-
-tab:CreateToggle("Farm", function(a)
-    print(a)
+Section1:Toggle({
+    Title = "Auto Farm Coins",
+    Description = "Optional Description here",
+    Default = false
+    }, function(value)
+    print(value)
 end)
-
-tab:CreateDropdown("Word", {"Sung", "Jin", "Woo"}, function(a)
-    print(a)
+Section1:Slider({
+    Title = "Walkspeed",
+    Description = "",
+    Default = 16,
+    Min = 0,
+    Max = 120
+    }, function(value)
+    print(value)
 end)
-
-tab2:CreateButton("Hello", function()
-    print("clicked")
+Section1:ColorPicker({
+    Title = "Colorpicker",
+    Description = "",
+    Default = Color3.new(255,0,0),
+    }, function(value)
+    print(value)
 end)
-
--- Adding the new toggle for CrystalKey
-tab:CreateToggle("Auto Unlock CrystalKey", function(state)
-    _G.CrystalKey = state
-    while _G.CrystalKey do
-        wait(0.1)
-        game:GetService("ReplicatedStorage").Network.CrystalKey_Unlock:InvokeServer()
-    end
+Section1:Textbox({
+    Title = "Damage Multiplier",
+    Description = "",
+    Default = "",
+    }, function(value)
+    print(value)
 end)
-
-tab:Show()
+Section1:Keybind({
+    Title = "Kill All",
+    Description = "",
+    Default = Enum.KeyCode.Q,
+    }, function(value)
+    print(value)
+end)
