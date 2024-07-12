@@ -43,7 +43,7 @@ end)
 Section1:Keybind({
     Title = "Kill All",
     Description = "",
-    Default = Enum.KeyCode.Q,
+    Default = Enum.KeyCode.P,
     }, function(value)
     print(value)
 end)
