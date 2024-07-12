@@ -31,7 +31,7 @@ end)
 
 local tab2 = win:Tab("Wheel")
 
-tab:Toggle("Use StarterWheel",false, function(t)
+tab2:Toggle("Use StarterWheel",false, function(t)
    _G.StarterWheel = t
    while _G.StarterWheel do wait(.1)
       local args = {
@@ -41,7 +41,7 @@ tab:Toggle("Use StarterWheel",false, function(t)
    end
 end)
 
-tab:Toggle("Use TechWheel",false, function(t)
+tab2:Toggle("Use TechWheel",false, function(t)
    _G.TechWheel = t
    while _G.TechWheel do wait(.1)
       local args = {
@@ -51,7 +51,7 @@ tab:Toggle("Use TechWheel",false, function(t)
    end
 end)
 
-tab:Toggle("Use VoidWheel",false, function(t)
+tab2:Toggle("Use VoidWheel",false, function(t)
    _G.VoidWheel = t
    while _G.VoidWheel do wait(.1)
       local args = {
