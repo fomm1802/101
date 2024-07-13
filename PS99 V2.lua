@@ -80,7 +80,7 @@ end)
 
 local tab3 = win:Tab("Bundle")
 
-tab3:Toggle("Use Charm_Stone",false, function(t)
+tab3:Toggle("Use Charm Stone",false, function(t)
    _G.Charm_Stone = t
    while _G.Charm_Stone do wait(.1)
       local args = {
@@ -90,9 +90,9 @@ tab3:Toggle("Use Charm_Stone",false, function(t)
    end
 end)
 
-tab3:Toggle("Use Charm_Stone",false, function(t)
-   _G.Mini = t
-   while _G.Mini do wait(.1)
+tab3:Toggle("Use Mini Chest",false, function(t)
+   _G.Mini_Chest = t
+   while _G.Mini_Chest do wait(.1)
       local args = {
       [1] = "Mini Chest"
       }
