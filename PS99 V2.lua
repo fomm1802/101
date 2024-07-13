@@ -6,6 +6,21 @@ local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.Righ
 
 local tab = win:Tab("Key")
 
+tab:Toggle("Change SecretKey to CrystalKey",false, function(t)
+   _G.SecretKey_of_CrystalKey = t
+   while _G.SecretKey_of_CrystalKey do wait(.1)
+      local args = {
+         [1] = "Crystal Key Castle"
+      }
+      game:GetService("ReplicatedStorage").Network.SecretRoom_Unlock:InvokeServer(unpack(args))
+      wait(1)
+      local args = {
+         [1] = "CrystalKeyWheel"
+      }
+      game:GetService("ReplicatedStorage").Network:FindFirstChild("Spinny Wheel: Request Spin"):InvokeServer(unpack(args))      
+   end
+end)
+
 tab:Toggle("Use CrystalKey",false, function(t)
    _G.CrystalKey = t
    while _G.CrystalKey do wait(.1)
