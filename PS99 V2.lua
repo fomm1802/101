@@ -76,6 +76,30 @@ tab2:Toggle("Use VoidWheel",false, function(t)
    end
 end)
 
+-- Tab3
+
+local tab3 = win:Tab("Bundle")
+
+tab3:Toggle("Use Charm_Stone",false, function(t)
+   _G.Charm_Stone = t
+   while _G.Charm_Stone do wait(.1)
+      local args = {
+      [1] = "Charm Stone"
+      }
+      game:GetService("ReplicatedStorage").Network.GiftBag_Open:InvokeServer(unpack(args))
+   end
+end)
+
+tab3:Toggle("Use Charm_Stone",false, function(t)
+   _G.Mini = t
+   while _G.Mini do wait(.1)
+      local args = {
+      [1] = "Mini Chest"
+      }
+      game:GetService("ReplicatedStorage").Network.GiftBag_Open:InvokeServer(unpack(args))
+   end
+end)
+
 ------------------------------------------------------------------------------------------
 
 local sethumanoid = win:Tab("Set")
