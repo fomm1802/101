@@ -81,16 +81,16 @@ end)
 local sethumanoid = win:Tab("Set")
 
 sethumanoid:Textbox("Walk Speed",true, function(t)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
 
 sethumanoid:Textbox("Jump Power",true, function(t)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
 
 sethumanoid:Button("Inf Jump", function()
   local InfiniteJumpEnabled = true
-    game:GetService("UserInputService").JumpRequest:connect(function()
+      game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
@@ -98,21 +98,17 @@ end)
 end)
 
 
-local teleport = win:Tab("Teleport")
+local teleport = win:Tab("Teleport To Server")
 
-teleport:Button("Lower Player In Sever", function()
+teleport:Button("Lower Player In Server", function()
       loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Lower%20Player%20In%20Sever.lua"))()
 end)
 
-teleport:Button("Hopper Sever", function()
-  loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Hopper%20Server.lua"))()
+teleport:Button("Hopper Server", function()
+      loadstring(game:HttpGet("https://github.com/fomm1802/101/raw/main/Hopper%20Server.lua"))()
 end)
 
 local change = win:Tab("Change UI Color")
-
-change:Bind("Bind",Enum.KeyCode.K, function()
-print("Pressed!")
-end)
 
 change:Colorpicker("Change UI Color",Color3.fromRGB(44, 120, 224), function(t)
 lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
